@@ -1,0 +1,51 @@
+@mixin overlay {
+  position: fixed;
+  height: 100%;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  padding: 20px 20px;
+  overflow-y: auto;
+  background:  rgba(var(--bg-d),.8);
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 1s;
+  transition-delay: 0.5s;
+
+  pointer-events: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.active {
+
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.6s;
+
+    pointer-events: initial;
+
+    &-mode {
+      z-index: 100;
+    }
+  }
+
+  &.active-drawer {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
+    transition: all 0.6s;
+    background-color: transparent;
+  }
+
+
+
+
+
+}

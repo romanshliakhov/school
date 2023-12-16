@@ -1,0 +1,72 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --error-bg: #d01f1f;
+  --body-bg: #21242B;
+  --body-font-size: 16px;
+  --content-width: 1440px;
+  --container-offset: clamp(10px, 1.953125vw, 30px);
+
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// --------------- default JS variable ---------------
+ --header-height: 142px;
+ --team-slider-offset: clamp(15px, 3.90625vw, 40px);
+
+
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #EDE6D1;
+  // --scrollbar-thumb-hover: #00aff0;
+  --scrollbar-track:  #ffffff;
+  --scrollbar-track-hover: #ffffff;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default slect variable ---------------
+  --select-inner-bg: #404040;
+  --select-inner-border: #FDFDFD;
+  --select-focus-border: #FDFDFD;
+
+// --------------- default font-family variable ---------------
+  --font-family: "Inter" , sans-serif; // var(--font-family);
+  --font-family2: "Forum" , sans-serif; // var(--font-family2);
+
+// --------------- default text color variable ---------------
+  // --burger-color: #{HexToRGB(#00d655)};
+
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#21242B)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#EE6C3D)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#2B2E36)}; // rgba(var(--cl-e),1.0);
+
+  --cl-f: #{HexToRGB(#5DC948)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#8B909D)}; // rgba(var(--cl-g),1.0);
+
+
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#21242B)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#EE6C3D)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#2B2E36)}; // rgba(var(--bg-e),1.0);
+
+  --bg-f: #{HexToRGB(#5DC948)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#8B909D)}; // rgba(var(--bg-g),1.0);
+
+
+
+  --team-slider-gradient: linear-gradient(-90deg, rgba(255,255,255,0) 0%, rgba(33,36,43,1) 76%);
+// --------------- default border color color variable ---------------
+  --br-a: #EE6C3D; // var(--br-a);
+
+
+// -------------
+
+
+}
+
+

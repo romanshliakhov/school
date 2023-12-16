@@ -1,0 +1,27 @@
+.main-title {
+    --size: clamp(57px, 11.905vw, 117px);
+    color: rgba(var(--cl-d),1.0);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--size);
+    letter-spacing: calc(clamp(0px ,0.714vw, 6px) * -1);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+        font-style: inherit;
+    }
+}
+
+.accent i {
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    letter-spacing: inherit;
+    color: rgba(var(--cl-c),1.0);
+}

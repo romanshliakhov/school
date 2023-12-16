@@ -1,0 +1,24 @@
+.main-nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px clamp(30px, 3.90625vw, 60px);
+  }
+
+  a {
+    color: rgba(var(--cl-a),1.0);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: color .3s;
+
+    @include hover {
+      color: rgba(var(--cl-d),1.0);
+    }
+
+  }
+}
